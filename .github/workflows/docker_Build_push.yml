@@ -21,6 +21,6 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          IMAGE="${{ secrets.AZURE }}/myappjv:$joao"
+          IMAGE="${{ secrets.AZURE }}/myappjv:joao"
           docker build -t "$IMAGE" .
           docker push "$IMAGE"
