@@ -21,6 +21,6 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          IMAGE="${{ secrets.AZURE }}/myapp:${{ github.sha }}"
+          IMAGE="${{ secrets.AZURE }}/myappjv:${{ github.sha }}"
           docker build -t "$IMAGE" .
           docker push "$IMAGE"
